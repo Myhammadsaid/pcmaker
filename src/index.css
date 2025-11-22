@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+* {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
