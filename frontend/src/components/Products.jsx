@@ -7,7 +7,7 @@ const Products = () => {
 			<div className='container mx-auto'>
 				<h1 className='text-3xl font-bold mb-5 lowercase'>Продукты</h1>
 				<div className='flex items-center justify-center gap-5 flex-wrap'>
-					<div className='w-full max-w-[300px] border-[1px] border-[#f1f1f1] p-3'>
+					<div className='w-full max-w-[300px] border border-[#f1f1f1] p-3'>
 						<img
 							className='w-full mb-2'
 							src='https://files.ox-sys.com/cache/500x_/image/0f/eb/92/0feb92c61d2d3d6f06a65330437ccf137e7b4f7e776bde9b0f82f5abb2dc6cea.png'
