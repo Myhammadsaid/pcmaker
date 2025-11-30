@@ -12,15 +12,12 @@ const Products = () => {
 	}, [favorites])
 
 	const handleFavoriteProduct = product => {
-		if (favorites.length) {
-			let inx = favorites.filter(item => item.id !== product.id)
-			console.log(inx)
-
-			if (inx === -1) {
-				return setFavorites(prev => [...prev, product])
-			}
-		} else {
+		let item = favorites.filter(item => item.id === product.id)
+		if (!item.length) {
 			return setFavorites(prev => [...prev, product])
+		} else {
+			let filtered = favorites.filter(item => item.id !== product.id)
+			return setFavorites(filtered)
 		}
 	}
 
